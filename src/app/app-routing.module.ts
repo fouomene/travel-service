@@ -5,12 +5,14 @@ import { VoyagesComponent } from './voyages/voyages.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
   { path: 'voyages', component: VoyagesComponent },
   { path: 'reservation', component: ReservationComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 

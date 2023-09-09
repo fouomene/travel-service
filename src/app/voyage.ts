@@ -1,5 +1,7 @@
 export interface Voyage {
     id: number;
     nom: string;
-    description : string;
+    destination: string;
+    description: string;
+   
   }

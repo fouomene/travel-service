@@ -9,6 +9,9 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { ContactComponent } from './contact/contact.component';
     VoyagesComponent,
     ReservationComponent,
     AccueilComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
